@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context=".register">
+
+
+    <EditText
+        android:id="@+id/userEmailInputLoggin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#ECD5A3"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="#EED7A4"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textPersonName"
+        android:textColor="#ECD5A3"
+        android:textColorHint="#B3ECD5A3"
+        app:layout_constraintBottom_toTopOf="@+id/userPasswordInputLoggin"
+        app:layout_constraintEnd_toEndOf="@+id/spiritualNameInput"
+        app:layout_constraintStart_toStartOf="@+id/spiritualNameInput"
+        app:layout_constraintTop_toBottomOf="@+id/spiritualNameInput" />
+
+    <EditText
+        android:id="@+id/spiritualNameInput"
+        android:layout_width="251dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#ECD5A3"
+        android:drawableLeft="@drawable/baseline_person"
+        android:drawablePadding="10dp"
+        android:drawableTint="#EDD6A3"
+        android:ems="10"
+        android:hint="Spiritual Name"
+        android:inputType="textPersonName"
+        android:textColor="#ECD5A3"
+        android:textColorHint="#B2ECD5A3"
+        app:layout_constraintBottom_toTopOf="@+id/userEmailInputLoggin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoLogin" />
+
+    <EditText
+        android:id="@+id/userRepeatPasswordInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#ECD5A3"
+        android:drawableLeft="@drawable/baseline_security"
+        android:drawablePadding="10dp"
+        android:drawableTint="#EDD6A3"
+        android:ems="10"
+        android:hint="Repeat Password"
+        android:inputType="textPersonName"
+        android:textColor="#ECD5A3"
+        android:textColorHint="#B3ECD5A3"
+        app:layout_constraintEnd_toEndOf="@+id/userPasswordInputLoggin"
+        app:layout_constraintStart_toStartOf="@+id/userPasswordInputLoggin"
+        app:layout_constraintTop_toBottomOf="@+id/userPasswordInputLoggin" />
+
+    <EditText
+        android:id="@+id/userPasswordInputLoggin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#ECD5A3"
+        android:drawableLeft="@drawable/baseline_security"
+        android:drawablePadding="10dp"
+        android:drawableTint="#EDD6A3"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:textColor="#ECD5A3"
+        android:textColorHint="#B3ECD5A3"
+        app:layout_constraintEnd_toEndOf="@+id/userEmailInputLoggin"
+        app:layout_constraintStart_toStartOf="@+id/userEmailInputLoggin"
+        app:layout_constraintTop_toBottomOf="@+id/userEmailInputLoggin" />
+
+    <TextView
+        android:id="@+id/infoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:text="Register"
+        android:textColor="#EFD8A5"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/userRegisterbutton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#EED7A4"
+        android:text="Register Now"
+        android:textColor="#090909"
+        app:layout_constraintEnd_toEndOf="@+id/userRepeatPasswordInput"
+        app:layout_constraintStart_toStartOf="@+id/userRepeatPasswordInput"
+        app:layout_constraintTop_toBottomOf="@+id/userRepeatPasswordInput" />
+
+    <TextView
+        android:id="@+id/useerGoToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Already Registered ? Go to Login"
+        android:textColor="#EDD6A3"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/userRegisterbutton"
+        app:layout_constraintStart_toStartOf="@+id/userRegisterbutton"
+        app:layout_constraintTop_toBottomOf="@+id/userRegisterbutton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

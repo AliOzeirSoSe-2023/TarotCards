@@ -1,0 +1,31 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_newReading">
+
+    <fragment
+        android:id="@+id/navigation_newReading"
+        android:name="com.example.stand310523.ui.NewReading.NewReadingFragment"
+        android:label="@string/title_NewReading"
+        tools:layout="@layout/fragment_newreading" />
+
+    <fragment
+        android:id="@+id/navigation_myReadings"
+        android:name="com.example.stand310523.ui.MyReading.MyReadingFragment"
+        android:label="@string/title_MyReadings"
+        tools:layout="@layout/fragment_myreading" />
+
+    <fragment
+        android:id="@+id/navigation_learnTarot"
+        android:name="com.example.stand310523.ui.LearnTarot.LearnTarotFragment"
+        android:label="@string/title_LearnTarot"
+        tools:layout="@layout/fragment_learntarot" />
+
+    <fragment
+        android:id="@+id/navigation_weeklyMirror"
+        android:name="com.example.stand310523.ui.WeeklyMirror.WeeklyMirrorFragment"
+        android:label="@string/title_WeeklyMirror"
+        tools:layout="@layout/fragment_weeklymirror" />
+
+</navigation>
